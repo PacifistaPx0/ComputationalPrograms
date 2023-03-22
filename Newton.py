@@ -21,7 +21,7 @@ def Newton_Rhap(f, df, n=0, iter=100):
         break
     x=n
     for i in range(iter):
-        x = x - f(x)/df(n)
+        x = x - f(x)/df(x)
     return x
 
 root = Newton_Rhap(f, df)
